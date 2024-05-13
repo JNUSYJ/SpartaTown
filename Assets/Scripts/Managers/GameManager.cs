@@ -1,9 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    // 미사용
     public static GameManager Instance;
 
     private void Awake()
@@ -13,8 +12,6 @@ public class GameManager : MonoBehaviour
             Instance = this;
         }
     }
-
-
 }
 
 enum CharacterSort

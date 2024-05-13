@@ -1400,6 +1400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d54c34c090d55146a731d2892240298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 275389692}
 --- !u!4 &953421820
 Transform:
   m_ObjectHideFlags: 0
@@ -13591,8 +13592,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerInput: {fileID: 275389696}
   CharacterNameText: {fileID: 769773199}
-  PenguinImage: {fileID: 1178969382}
-  WizardImage: {fileID: 2086267131}
+  UIPenguinImage: {fileID: 1178969382}
+  UIWizardImage: {fileID: 2086267131}
   CharacterSelectUI: {fileID: 186341017}
   PenguinSprite: {fileID: 1777647363}
   WizardSprite: {fileID: 930347644}

@@ -4,6 +4,7 @@ public class MoveObject : MonoBehaviour
 {
     private InputController inputController;
     private Rigidbody2D rigidbody;
+
     private Vector2 moveDirection = Vector2.zero;
 
     private void Awake()
