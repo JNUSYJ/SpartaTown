@@ -5,9 +5,13 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     private InputField nameInputField;
+    private CharacterSort characterSort = CharacterSort.Penguin;
 
     public PlayerInput PlayerInput;
     public Text CharacterNameText;
+    public GameObject PenguinImage, WizardImage;
+    public GameObject CharacterSelectUI;
+    public GameObject PenguinSprite, WizardSprite;
 
     private void Awake()
     {
@@ -24,6 +28,37 @@ public class UIManager : MonoBehaviour
             CharacterNameText.text = name;
             gameObject.SetActive(false);
             PlayerInput.enabled = true;
+        }
+    }
+
+    public void OpenCharacterSelectUI()
+    {
+        CharacterSelectUI.SetActive(true);
+    }
+
+    public void SelectCharacter(int characterSort)
+    {
+        this.characterSort = (CharacterSort)characterSort;
+        SetCharacter();
+        CharacterSelectUI.SetActive(false);
+    }
+
+    public void SetCharacter()
+    {
+        switch(characterSort)
+        {
+            case CharacterSort.Penguin:
+                PenguinImage.SetActive(true);
+                WizardImage.SetActive(false);
+                PenguinSprite.SetActive(true);
+                WizardSprite.SetActive(false);
+                break;
+            case CharacterSort.Wizard:
+                PenguinImage.SetActive(false);
+                WizardImage.SetActive(true);
+                PenguinSprite.SetActive(false);
+                WizardSprite.SetActive(true);
+                break;
         }
     }
 }
