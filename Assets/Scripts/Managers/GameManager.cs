@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // 미사용
+    // 게임매니저 미사용
     public static GameManager Instance;
 
     private void Awake()
@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     }
 }
 
-enum CharacterSort
+public enum CharacterSort
 {
     Penguin,
     Wizard
