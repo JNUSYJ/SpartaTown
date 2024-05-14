@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-public class UIManager : MonoBehaviour
+public class CharacterUI : MonoBehaviour
 {
     private InputField nameInputField;                  // 이름 입력란
     private CharacterSort characterSort = CharacterSort.Penguin;
